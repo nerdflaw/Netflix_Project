@@ -1,0 +1,321 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background: #000;
+	color: #fff;
+}
+
+.main-section {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./images/main-section-content-image.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.nav-section {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.main-section-content {
+	width: 100%;
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-left: 10%;
+	padding-right: 10%;
+	letter-spacing: 1px;
+}
+
+.main-sub-section {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	margin-top: 100px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+
+.main-logo {
+	width: 150px;
+	cursor: pointer;
+	color: #db0001;
+	margin-top: 20px;
+
+}
+
+nav button {
+	background: #db0001;
+	color: #fff;
+	padding: 13px 20px 8px 20px;
+	font-size: 12px;
+	border-radius: 3px;
+	margin-left: 10px;
+	cursor: pointer;
+	border: none;
+}
+
+.language-btn {
+	display: inline-flex;
+	align-items: center;
+	background-color: transparent;
+	border: 1px solid #fff;
+	padding: 8px 8px 9px 0;
+}
+
+.language-btn img {
+	width: 10px;
+	margin-left: 10px;
+}
+
+.main-section-content {
+	position: absolute;
+	text-align: center;
+}
+
+.main-section-content h1 {
+	line-height: 70px;
+	font-size: 40px;
+	font-weight: 900;
+}
+
+.main-section-content h3 {
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.account-creation {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.account-creation ::placeholder {
+	color: white;
+}
+
+.account-creation span {
+	font-size: 24px;
+	width: 200px;
+	height: 20px;
+}
+
+.email-signup {
+	width: 500px;
+	height: 55px;
+	background-color: transparent;
+	border-radius: 3px;
+	padding-left: 20px;
+	border: 1px solid #66696e;
+	font-size: 14px;
+}
+
+.get-started {
+	width: 200px;
+	height: 55px;
+	background-color: #db0001;
+	border: none;
+	overflow: hidden;
+	margin-left: 10px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.get-started span {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.sub-section {
+	display: flex;
+	align-items: center;
+	padding: 0 100px;
+	border-top: 7px solid #302e2e;
+}
+
+.section-right {
+	position: relative;
+}
+
+.section-right video {
+	position: absolute;
+	top: 100px;
+	right: 80px;
+	z-index: -1;
+}
+
+.section-right1 {
+	position: relative;
+}
+
+.section-right1 video {
+	position: absolute;
+	top: 38px;
+	right: 80px;
+	z-index: -1;
+	width: 493px;
+	height: 223px;
+}
+
+.sub-section h2 {
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.sub-section p {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.faq {
+	border-top: 7px solid #302e2e;
+	padding: 10px 12%;
+	text-align: center;
+	font-size: 18px;
+}
+
+.faq h2 {
+	font-weight: 500;
+	font-size: 40px;
+	margin-top: 50px;
+
+}
+
+.accordian {
+	margin: 60px auto;
+	width: 100%;
+	max-width: 750px;
+}
+
+.accordian li {
+	list-style: none;
+	width: 100%;
+	padding: 5px;
+}
+
+.accordian li label {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	font-size: 18px;
+	font-weight: 500;
+	background: #303030;
+	margin-bottom: 2px;
+	cursor: pointer;
+	position: relative;
+}
+
+label ::after {
+	content: '+';
+	font-size: 34px;
+	position: absolute;
+	right: 20px;
+	transition: tranform 0.5s;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.accordian .content {
+	background-color: #303030;
+	text-align: left;
+	padding: 0 20px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked+label+.content {
+	max-height: 650px;
+	padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked+label {
+	transform: rotate(135 deg);
+}
+
+.footer-section {
+	border-top: 7px solid #302e2e;
+	width: 100%;
+	height: 400px;
+}
+
+.contacts {
+	display: flex;
+	margin: 50px 0 0 155px;
+}
+
+.contacts a {
+	cursor: pointer;
+	text-decoration: underline;
+	color: white;
+}
+
+.email-end {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+.end-email-style {
+	padding-bottom: 20px;
+	font-size: smaller;
+	border-radius: 5px;
+	color: antiquewhite;
+	background-color: #1C2432;
+}
+
+.footer-items {
+	display: flex;
+	justify-content: space-around;
+}
+
+.box a {
+	display: block;
+	font-size: 15px;
+	font-weight: 200;
+	letter-spacing: 1px;
+	text-decoration: underline;
+	line-height: 30px;
+}
+
+.footer-items {
+	margin-top: 60px;
+}
+
+#globe-icon {
+	width: 15px;
+	height: 15px;
+	margin-right: 25px;
+	object-fit: cover;
+}
+
+.end {
+	margin-left: 155px;
+	font-size: 15px;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
